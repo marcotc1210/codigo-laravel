@@ -5,6 +5,8 @@
 @section('content')
   <h2>Servicios</h2>
 
+  <a href="{{ route('servicios.create') }}" class="btn btn-primary mt-3 mx-5"> + Agregar Servicio </a>
+
   @if ($servicios)          
   <div class="d-flex justify-content-around">
     @foreach ($servicios as $servicio)
